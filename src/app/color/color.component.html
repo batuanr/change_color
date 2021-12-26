@@ -1,0 +1,10 @@
+<p>color works!</p>
+
+<h3>Select Color</h3>
+<select  #element (change)="setColor(element.value)" [(ngModel)]="color" >
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="black">Black</option>
+  <option value="pink">Pink</option>
+</select>
+<div id="color" [style.backgroundColor]="color"  ></div>
